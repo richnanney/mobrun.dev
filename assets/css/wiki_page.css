@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    color: #000;
+    line-height: 1.6;
+}
+
+.header {
+    background: linear-gradient(to bottom, #4a7ba7 0%, #376491 100%);
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 3px solid #2a5476;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 1;
+    background: white;
+    border: 1px solid #a7d7f9;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 28px;
+    border-bottom: 2px solid #a7d7f9;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.infobox {
+    float: right;
+    width: 300px;
+    border: 2px solid #a7d7f9;
+    background-color: #f0f8ff;
+    margin: 0 0 15px 15px;
+    font-size: 13px;
+}
+
+.infobox-header {
+    background: linear-gradient(to bottom, #4a7ba7 0%, #376491 100%);
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.infobox-image {
+    background: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.infobox-table {
+    width: 100%;
+}
+
+.infobox-table tr:nth-child(even) {
+    background-color: #e8f2ff;
+}
+
+.infobox-table th {
+    background-color: #d0e8ff;
+    padding: 5px 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.infobox-table td {
+    padding: 5px 8px;
+}
+
+.section-header {
+    font-size: 20px;
+    border-bottom: 1px solid #a7d7f9;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.type-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #b8a038;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 15px 0;
+}
+
+table th {
+    background-color: #d0e8ff;
+    padding: 8px;
+    border: 1px solid #a7d7f9;
+}
+
+table td {
+    padding: 8px;
+    border: 1px solid #a7d7f9;
+}
+
+.type-normal { background-color: #A8A77A; }
+.type-fire { background-color: #EE8130; }
+.type-water { background-color: #6390F0; }
+.type-electric { background-color: #F7D02C; }
+.type-grass { background-color: #7AC74C; }
+.type-ice { background-color: #96D9D6; }
+.type-fighting { background-color: #C22E28; }
+.type-poison { background-color: #A33EA1; }
+.type-ground { background-color: #E2BF65; }
+.type-flying { background-color: #A98FF3; }
+.type-psychic { background-color: #F95587; }
+.type-bug { background-color: #A6B91A; }
+.type-rock { background-color: #b8a038; }
+.type-ghost { background-color: #735797; }
+.type-dragon { background-color: #6F35FC; }
+.type-steel { background-color: #b8b8d0; }
+.type-dark { background-color: #705746; }
+.type-fairy { background-color: #D685AD; }
