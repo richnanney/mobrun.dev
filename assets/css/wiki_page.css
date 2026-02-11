@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -115,13 +114,11 @@ table {
 
 table th {
     background-color: #d0e8ff;
-    padding: 8px;
     border: 1px solid #a7d7f9;
 }
 
 table td {
     padding: 8px;
-    border: 1px solid #a7d7f9;
 }
 
 .type-normal { background-color: #A8A77A; }
