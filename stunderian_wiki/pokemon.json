@@ -723,7 +723,7 @@
     "name": "Flareon",
     "type1": "fire",
     "type2": "dark",
-    "origin": "kazeran",
+    "origin": "stunderian",
     "image": "../images/flareon_s.png",
     "hp": 65,
     "atk": 130,
@@ -2332,7 +2332,7 @@
   },
   {
     "num": 890,
-    "name": "Eternatus",
+    "name": "EternaRad",
     "type1": "poison",
     "type2": "dragon",
     "origin": "stunderian",
