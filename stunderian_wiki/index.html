@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Steel Tundra Dex</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Pragati+Narrow:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ─── Top Navigation ─── -->
+<nav class="topnav">
+  <div class="topnav-inner">
+    <span class="logo">Steel Tundra Dex</span>
+
+    <button class="tab-btn active" data-tab="species">Species</button>
+    <button class="tab-btn" data-tab="moves">Moves</button>
+    <button class="tab-btn" data-tab="abilities">Abilities</button>
+
+    <div class="nav-sep"></div>
+
+    <!-- Search (always visible) -->
+    <input class="nav-search" id="searchInput" type="text" placeholder="Search…" autocomplete="off">
+
+    <!-- Origin filters (species tab only) -->
+    <div class="origin-controls" id="originControls">
+      <button class="origin-btn all active" data-origin="all">All</button>
+      <button class="origin-btn stunderian" data-origin="stunderian">Stunderian</button>
+            <button class="origin-btn kazeran" data-origin="kazeran">Kazeran</button>
+      <button class="origin-btn vanguard" data-origin="vanguard">Vanguard</button>
+      <button class="origin-btn delta" data-origin="delta">Delta</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ─── Main Layout ─── -->
+<div class="main">
+  <!-- ─── Content Area ─── -->
+  <div class="content-area">
+    <!-- Species Table -->
+    <div id="speciesView">
+      <div class="content-wrap">
+        <table class="species-table" id="speciesTable">
+          <thead>
+            <tr>
+              <th data-tab="species" data-col="num" class="sorted"># <span class="sort-arrow active">▲</span></th>
+              <th style="width:64px"></th>
+              <th data-tab="species" data-col="name">Name <span class="sort-arrow"></span></th>
+              <th data-tab="species" data-col="type1">Type <span class="sort-arrow"></span></th>
+              <th data-tab="species" data-col="origin">Origin <span class="sort-arrow"></span></th>
+              <th data-tab="species" data-col="hp">HP <span class="sort-arrow"></span></th>
+              <th data-tab="species" data-col="atk">Atk <span class="sort-arrow"></span></th>
+              <th data-tab="species" data-col="def">Def <span class="sort-arrow"></span></th>
+              <th data-tab="species" data-col="spa">SpA <span class="sort-arrow"></span></th>
+              <th data-tab="species" data-col="spd">SpD <span class="sort-arrow"></span></th>
+              <th data-tab="species" data-col="spe">Spe <span class="sort-arrow"></span></th>
+              <th data-tab="species" data-col="bst">BST <span class="sort-arrow"></span></th>
+            </tr>
+          </thead>
+          <tbody id="speciesTbody"></tbody>
+        </table>
+        <div class="no-results hidden" id="noResults">
+          <div class="big">🔍</div>
+          No Pokémon match your filters.
+        </div>
+      </div><!-- /content-wrap -->
+    </div>
+
+    <!-- Moves Tab -->
+    <div id="movesView" class="hidden">
+      <div class="content-wrap">
+        <table class="species-table" id="movesTable">
+          <thead>
+            <tr>
+              <th data-tab="moves" data-col="id" class="sorted"># <span class="sort-arrow active">▲</span></th>
+              <th data-tab="moves" data-col="name">Name <span class="sort-arrow"></span></th>
+              <th data-tab="moves" data-col="type">Type <span class="sort-arrow"></span></th>
+              <th data-tab="moves" data-col="category">Category <span class="sort-arrow"></span></th>
+              <th data-tab="moves" data-col="power">Power <span class="sort-arrow"></span></th>
+              <th data-tab="moves" data-col="accuracy">Accuracy <span class="sort-arrow"></span></th>
+              <th data-tab="moves" data-col="pp">PP <span class="sort-arrow"></span></th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody id="movesTbody"></tbody>
+        </table>
+        <div class="no-results hidden" id="movesNoResults">
+          <div class="big">🔍</div>
+          No moves match your search.
+        </div>
+      </div>
+    </div>
+
+    <!-- Abilities Tab -->
+    <div id="abilitiesView" class="hidden">
+      <div class="content-wrap">
+        <table class="species-table" id="abilitiesTable">
+          <thead>
+            <tr>
+              <th data-tab="abilities" data-col="id" class="sorted"># <span class="sort-arrow active">▲</span></th>
+              <th data-tab="abilities" data-col="name">Name <span class="sort-arrow"></span></th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody id="abilitiesTbody"></tbody>
+        </table>
+        <div class="no-results hidden" id="abilitiesNoResults">
+          <div class="big">🔍</div>
+          No abilities match your search.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ─── Detail Panel ─── -->
+  <aside class="detail-panel" id="detailPanel">
+    <div class="detail-inner" id="detailInner"></div>
+  </aside>
+
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════════════
+const $ = id => document.getElementById(id);
+
+function typeColor(type) {
+  return getComputedStyle(document.documentElement).getPropertyValue(`--type-${type}`).trim() || '#888';
+}
+function typeChip(type) {
+  if (!type) return '';
+  const col = typeColor(type);
+  return `<span class="type-chip" style="background:${col}22;color:${col};border:1px solid ${col}55">${type}</span>`;
+}
+function statColor(val) {
+  if (val >= 120) return '#62b957';
+  if (val >= 90)  return '#a0c854';
+  if (val >= 60)  return '#e8c84a';
+  if (val >= 40)  return '#e88040';
+  return '#e85050';
+}
+function statBar(label, val) {
+  const pct = Math.min(100, (val / 255) * 100).toFixed(1);
+  const col = statColor(val);
+  return `<div class="stat-row">
+    <span class="stat-label">${label}</span>
+    <span class="stat-val">${val}</span>
+    <div class="stat-bar-bg"><div class="stat-bar" style="width:${pct}%;background:${col}"></div></div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════
+let POKEMON      = [];
+let MOVES        = [];
+let ABILITIES    = [];
+let activeTab    = 'species';
+let activeOrigin = 'all';
+let searchQuery  = '';
+let sortCol      = 'num';
+let sortAsc      = true;
+let selectedPkm  = null;
+
+// per-tab sort state
+const tabSort = {
+  species:   { col: 'num',  asc: true },
+  moves:     { col: 'id',   asc: true },
+  abilities: { col: 'id',   asc: true },
+};
+
+// ═══════════════════════════════════════════════════
+// LOAD DATA
+// ═══════════════════════════════════════════════════
+Promise.all([
+  fetch('pokemon.json').then(r => r.json()),
+  fetch('moves.json').then(r => r.json()),
+  fetch('abilities.json').then(r => r.json()),
+]).then(([pkmData, moveData, abilityData]) => {
+  POKEMON   = pkmData;
+  MOVES     = moveData;
+  ABILITIES = abilityData;
+  renderTable();
+}).catch(err => {
+  console.error('Failed to load data:', err);
+  $('noResults').textContent = 'Could not load data files. Make sure you are running this from a local server or web host.';
+  $('noResults').classList.remove('hidden');
+});
+
+// ═══════════════════════════════════════════════════
+// FILTERING & SORTING
+// ═══════════════════════════════════════════════════
+function getFiltered() {
+  return POKEMON.filter(p => {
+    if (activeOrigin !== 'all' && p.origin !== activeOrigin) return false;
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      if (!p.name.toLowerCase().includes(q) && !String(p.num).includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+function getSorted(list) {
+  const { col, asc } = tabSort.species;
+  return [...list].sort((a, b) => {
+    const bst = p => p.hp + p.atk + p.def + p.spa + p.spd + p.spe;
+    let va = col === 'bst' ? bst(a) : a[col];
+    let vb = col === 'bst' ? bst(b) : b[col];
+    if (typeof va === 'string') { va = va.toLowerCase(); vb = vb.toLowerCase(); }
+    if (va === vb) return a.num - b.num;
+    return asc ? (va > vb ? 1 : -1) : (va < vb ? 1 : -1);
+  });
+}
+
+// ═══════════════════════════════════════════════════
+// RENDER SPECIES TABLE
+// ═══════════════════════════════════════════════════
+function renderTable() {
+  const data  = getSorted(getFiltered());
+  const tbody = $('speciesTbody');
+  const noRes = $('noResults');
+
+  if (data.length === 0) {
+    tbody.innerHTML = '';
+    noRes.classList.remove('hidden');
+    return;
+  }
+  noRes.classList.add('hidden');
+
+  tbody.innerHTML = data.map(p => {
+    const bst = p.hp + p.atk + p.def + p.spa + p.spd + p.spe;
+    const sel = selectedPkm && selectedPkm.num === p.num ? 'selected' : '';
+    return `<tr class="${sel}" data-num="${p.num}">
+      <td class="num-cell">${String(p.num).padStart(3,'0')}</td>
+      <td style="padding:2px 6px;width:64px;text-align:center">${p.image ? `<img src="${p.image}" alt="${p.name}" style="width:52px;height:52px;object-fit:contain;display:block;margin:auto">` : ''}</td>
+      <td class="name-cell">${p.name}</td>
+      <td>${typeChip(p.type1)}${p.type2 ? ' ' + typeChip(p.type2) : ''}</td>
+      <td><span class="origin-tag ${p.origin}">${p.origin}</span></td>
+      <td>${p.hp}</td>
+      <td>${p.atk}</td>
+      <td>${p.def}</td>
+      <td>${p.spa}</td>
+      <td>${p.spd}</td>
+      <td>${p.spe}</td>
+      <td style="font-weight:700;color:var(--accent)">${bst}</td>
+    </tr>`;
+  }).join('');
+
+  tbody.querySelectorAll('tr').forEach(row => {
+    row.addEventListener('click', () => {
+      const pkm = POKEMON.find(p => p.num === +row.dataset.num);
+      if (selectedPkm && selectedPkm.num === pkm.num) {
+        selectedPkm = null;
+        closePanel();
+      } else {
+        selectedPkm = pkm;
+        renderPanel(pkm);
+      }
+      tbody.querySelectorAll('tr').forEach(r => r.classList.remove('selected'));
+      if (selectedPkm) row.classList.add('selected');
+    });
+  });
+}
+
+// ═══════════════════════════════════════════════════
+// RENDER MOVES TABLE
+// ═══════════════════════════════════════════════════
+function renderMoves() {
+  const q      = searchQuery.toLowerCase();
+  const { col, asc } = tabSort.moves;
+  const data   = [...MOVES]
+    .filter(m => !q || m.name.toLowerCase().includes(q))
+    .sort((a, b) => {
+      let va = a[col] ?? '', vb = b[col] ?? '';
+      if (typeof va === 'string') { va = va.toLowerCase(); vb = vb.toLowerCase(); }
+      if (va === vb) return a.id - b.id;
+      return asc ? (va > vb ? 1 : -1) : (va < vb ? 1 : -1);
+    });
+
+  const tbody = $('movesTbody');
+  const noRes = $('movesNoResults');
+  if (data.length === 0) { tbody.innerHTML = ''; noRes.classList.remove('hidden'); return; }
+  noRes.classList.add('hidden');
+
+  tbody.innerHTML = data.map(m => `<tr>
+    <td class="num-cell">${String(m.id).padStart(3,'0')}</td>
+    <td class="name-cell">${m.name}</td>
+    <td>${typeChip(m.type)}</td>
+    <td style="color:var(--text-dim)">${m.category || '—'}</td>
+    <td>${m.power ?? '—'}</td>
+    <td>${m.accuracy != null ? m.accuracy + '%' : '—'}</td>
+    <td>${m.pp ?? '—'}</td>
+    <td style="color:var(--text-dim);font-size:0.82rem">${m.description || ''}</td>
+  </tr>`).join('');
+}
+
+// ═══════════════════════════════════════════════════
+// RENDER ABILITIES TABLE
+// ═══════════════════════════════════════════════════
+function renderAbilities() {
+  const q      = searchQuery.toLowerCase();
+  const { col, asc } = tabSort.abilities;
+  const data   = [...ABILITIES]
+    .filter(a => !q || a.name.toLowerCase().includes(q))
+    .sort((a, b) => {
+      let va = a[col] ?? '', vb = b[col] ?? '';
+      if (typeof va === 'string') { va = va.toLowerCase(); vb = vb.toLowerCase(); }
+      if (va === vb) return a.id - b.id;
+      return asc ? (va > vb ? 1 : -1) : (va < vb ? 1 : -1);
+    });
+
+  const tbody = $('abilitiesTbody');
+  const noRes = $('abilitiesNoResults');
+  if (data.length === 0) { tbody.innerHTML = ''; noRes.classList.remove('hidden'); return; }
+  noRes.classList.add('hidden');
+
+  tbody.innerHTML = data.map(a => `<tr>
+    <td class="num-cell">${String(a.id).padStart(3,'0')}</td>
+    <td class="name-cell">${a.name}</td>
+    <td style="color:var(--text-dim);font-size:0.82rem">${a.details || ''}</td>
+  </tr>`).join('');
+}
+
+function renderActiveTab() {
+  if (activeTab === 'species')   renderTable();
+  if (activeTab === 'moves')     renderMoves();
+  if (activeTab === 'abilities') renderAbilities();
+}
+function closePanel() {
+  $('detailPanel').classList.remove('open');
+}
+
+function renderPanel(p) {
+  const bst = p.hp + p.atk + p.def + p.spa + p.spd + p.spe;
+  const abilities = p.abilities.map(a =>
+    `<span class="ability-pill">${a}</span>`
+  ).join('') + (p.hiddenAbility
+    ? `<span class="ability-pill">${p.hiddenAbility} <span class="ha-badge">HA</span></span>`
+    : '');
+
+  const learnsetRows = (p.learnset || []).map(l =>
+    `<tr>
+      <td style="color:var(--text-dim);text-align:center">${l.level === 'evo' ? 'Evo' : l.level === 'tm' ? 'TM' : l.level}</td>
+      <td>${l.move}</td>
+      <td>${typeChip(l.type)}</td>
+    </tr>`
+  ).join('');
+
+  $('detailInner').innerHTML = `
+    ${p.image ? `<div class="detail-sprite"><img src="${p.image}" alt="${p.name}"></div>` : ''}
+    <div class="detail-header">
+      <div>
+        <div class="detail-name">${p.name}</div>
+        <div class="detail-num">#${String(p.num).padStart(3,'0')} · ${p.category || ''} Pokémon</div>
+      </div>
+      <button class="close-btn" id="closePanel" title="Close">✕</button>
+    </div>
+
+    <div class="detail-types">
+      ${typeChip(p.type1)}${p.type2 ? typeChip(p.type2) : ''}
+      <span class="origin-tag ${p.origin}" style="margin-left:4px">${p.origin}</span>
+    </div>
+
+    ${p.notes ? `<div style="font-size:0.82rem;color:var(--text-dim);font-style:italic;line-height:1.5">${p.notes}</div>` : ''}
+
+    <div>
+      <div class="detail-section-title">Base Stats</div>
+      ${statBar('HP',  p.hp)}
+      ${statBar('Atk', p.atk)}
+      ${statBar('Def', p.def)}
+      ${statBar('SpA', p.spa)}
+      ${statBar('SpD', p.spd)}
+      ${statBar('Spe', p.spe)}
+      <div class="stat-row" style="margin-top:4px">
+        <span class="stat-label">BST</span>
+        <span class="stat-val" style="color:var(--accent);font-weight:700">${bst}</span>
+        <div class="stat-bar-bg"><div class="stat-bar" style="width:${Math.min(100,(bst/720)*100).toFixed(1)}%;background:var(--accent)"></div></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="detail-section-title">Info</div>
+      <div class="detail-row"><span class="key">Height</span><span class="val">${p.height || '—'}</span></div>
+      <div class="detail-row"><span class="key">Weight</span><span class="val">${p.weight || '—'}</span></div>
+      <div class="detail-row"><span class="key">Gender</span><span class="val">${p.genderRatio || '—'}</span></div>
+      <div class="detail-row"><span class="key">Catch Rate</span><span class="val">${p.catchRate ?? '—'}</span></div>
+      <div class="detail-row"><span class="key">Egg Groups</span><span class="val">${p.eggGroups ? p.eggGroups.join(', ') : '—'}</span></div>
+    </div>
+
+    <div>
+      <div class="detail-section-title">Abilities</div>
+      <div>${abilities}</div>
+    </div>
+
+    ${p.learnset && p.learnset.length ? `
+    <div>
+      <div class="detail-section-title">Learnset</div>
+      <table class="learnset-table">
+        <thead><tr><th>Lv</th><th>Move</th><th>Type</th></tr></thead>
+        <tbody>${learnsetRows}</tbody>
+      </table>
+    </div>` : ''}
+  `;
+
+  $('detailPanel').classList.add('open');
+  $('closePanel').addEventListener('click', () => {
+    selectedPkm = null;
+    closePanel();
+    renderTable();
+  });
+}
+
+// ═══════════════════════════════════════════════════
+// TAB SWITCHING
+// ═══════════════════════════════════════════════════
+function switchTab(tab) {
+  activeTab = tab;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  ['speciesView','movesView','abilitiesView'].forEach(v => {
+    $(v).classList.toggle('hidden', !v.startsWith(tab));
+  });
+  $('originControls').classList.toggle('hidden', tab !== 'species');
+  closePanel();
+  selectedPkm = null;
+  renderActiveTab();
+}
+
+// ═══════════════════════════════════════════════════
+// SORT
+// ═══════════════════════════════════════════════════
+function setSortCol(tab, col) {
+  const state = tabSort[tab];
+  if (state.col === col) { state.asc = !state.asc; }
+  else { state.col = col; state.asc = true; }
+
+  // update arrow indicators for this tab's table
+  const tableId = tab === 'species' ? 'speciesTable' : tab === 'moves' ? 'movesTable' : 'abilitiesTable';
+  $(tableId).querySelectorAll('th[data-col]').forEach(th => {
+    const isSorted = th.dataset.col === state.col;
+    th.classList.toggle('sorted', isSorted);
+    const arrow = th.querySelector('.sort-arrow');
+    if (arrow) {
+      arrow.classList.toggle('active', isSorted);
+      arrow.textContent = isSorted ? (state.asc ? '▲' : '▼') : '';
+    }
+  });
+  renderActiveTab();
+}
+
+// ═══════════════════════════════════════════════════
+// EVENT WIRING
+// ═══════════════════════════════════════════════════
+
+// Tabs
+document.querySelectorAll('.tab-btn').forEach(b => {
+  b.addEventListener('click', () => switchTab(b.dataset.tab));
+});
+
+// Sort headers — each th carries data-tab and data-col
+document.addEventListener('click', e => {
+  const th = e.target.closest('th[data-col]');
+  if (!th) return;
+  const tab = th.dataset.tab || activeTab;
+  setSortCol(tab, th.dataset.col);
+});
+
+// Origin filters
+document.querySelectorAll('#originControls .origin-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#originControls .origin-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeOrigin = btn.dataset.origin;
+    renderTable();
+  });
+});
+
+// Search
+$('searchInput').addEventListener('input', e => {
+  searchQuery = e.target.value.trim();
+  renderActiveTab();
+});
+</script>
+</body>
+</html>

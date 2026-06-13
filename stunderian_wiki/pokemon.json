@@ -1,0 +1,2383 @@
+[
+  {
+    "num": 1533,
+    "name": "Rinring",
+    "type1": "dark",
+    "type2": null,
+    "origin": "stunderian",
+    "image": "../images/rinring.png",
+    "hp": 40,
+    "atk": 75,
+    "def": 35,
+    "spa": 40,
+    "spd": 40,
+    "spe": 90,
+    "abilities": [
+      "Super Luck",
+      "Own Tempo"
+    ],
+    "hiddenAbility": "Unnerve",
+    "height": "0.4 m",
+    "weight": "2.0 kg",
+    "category": null,
+    "genderRatio": "100% \u2640",
+    "catchRate": 150,
+    "eggGroups": [
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Scratch",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Growl",
+        "type": "normal"
+      },
+      {
+        "level": 4,
+        "move": "Tail Whip",
+        "type": "normal"
+      },
+      {
+        "level": 6,
+        "move": "Bite",
+        "type": "dark"
+      },
+      {
+        "level": 9,
+        "move": "Fake Out",
+        "type": "normal"
+      },
+      {
+        "level": 12,
+        "move": "Sing",
+        "type": "normal"
+      },
+      {
+        "level": 14,
+        "move": "Feint Attack",
+        "type": "dark"
+      },
+      {
+        "level": 17,
+        "move": "Heal Bell",
+        "type": "normal"
+      },
+      {
+        "level": 20,
+        "move": "Fury Swipes",
+        "type": "normal"
+      },
+      {
+        "level": 22,
+        "move": "Screech",
+        "type": "normal"
+      },
+      {
+        "level": 25,
+        "move": "Taunt",
+        "type": "dark"
+      },
+      {
+        "level": 28,
+        "move": "Snarl",
+        "type": "dark"
+      },
+      {
+        "level": 30,
+        "move": "Lovely Kiss",
+        "type": "normal"
+      },
+      {
+        "level": 34,
+        "move": "Attract",
+        "type": "normal"
+      },
+      {
+        "level": 38,
+        "move": "Slash",
+        "type": "normal"
+      },
+      {
+        "level": 43,
+        "move": "Night Slash",
+        "type": "dark"
+      },
+      {
+        "level": 46,
+        "move": "Shadow Claw",
+        "type": "ghost"
+      },
+      {
+        "level": 49,
+        "move": "Parting Shot",
+        "type": "dark"
+      },
+      {
+        "level": 50,
+        "move": "Quick Attack",
+        "type": "normal"
+      },
+      {
+        "level": 52,
+        "move": "Play Rough",
+        "type": "fairy"
+      }
+    ]
+  },
+  {
+    "num": 1534,
+    "name": "Berurun",
+    "type1": "dark",
+    "type2": null,
+    "origin": "stunderian",
+    "image": "../images/berurun.png",
+    "hp": 65,
+    "atk": 95,
+    "def": 85,
+    "spa": 70,
+    "spd": 100,
+    "spe": 114,
+    "abilities": [
+      "Own Tempo",
+      "Super Luck"
+    ],
+    "hiddenAbility": "Unnerve",
+    "height": "0.7 m",
+    "weight": "4.0 kg",
+    "category": null,
+    "genderRatio": "100% \u2640",
+    "catchRate": 100,
+    "eggGroups": [
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Scratch",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Growl",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Charm",
+        "type": "fairy"
+      },
+      {
+        "level": 1,
+        "move": "Assist",
+        "type": "normal"
+      },
+      {
+        "level": 4,
+        "move": "Tail Whip",
+        "type": "normal"
+      },
+      {
+        "level": 6,
+        "move": "Bite",
+        "type": "dark"
+      },
+      {
+        "level": 9,
+        "move": "Fake Out",
+        "type": "normal"
+      },
+      {
+        "level": 12,
+        "move": "Sing",
+        "type": "normal"
+      },
+      {
+        "level": 14,
+        "move": "Feint Attack",
+        "type": "dark"
+      },
+      {
+        "level": 17,
+        "move": "Heal Bell",
+        "type": "normal"
+      },
+      {
+        "level": 20,
+        "move": "Fury Swipes",
+        "type": "normal"
+      },
+      {
+        "level": 22,
+        "move": "Screech",
+        "type": "normal"
+      },
+      {
+        "level": 25,
+        "move": "Taunt",
+        "type": "dark"
+      },
+      {
+        "level": 28,
+        "move": "Snarl",
+        "type": "dark"
+      },
+      {
+        "level": 30,
+        "move": "Lovely Kiss",
+        "type": "normal"
+      },
+      {
+        "level": 34,
+        "move": "Attract",
+        "type": "normal"
+      },
+      {
+        "level": 38,
+        "move": "Slash",
+        "type": "normal"
+      },
+      {
+        "level": 43,
+        "move": "Night Slash",
+        "type": "dark"
+      },
+      {
+        "level": 46,
+        "move": "Shadow Claw",
+        "type": "ghost"
+      },
+      {
+        "level": 49,
+        "move": "Parting Shot",
+        "type": "dark"
+      },
+      {
+        "level": 50,
+        "move": "Quick Attack",
+        "type": "normal"
+      },
+      {
+        "level": 52,
+        "move": "Play Rough",
+        "type": "fairy"
+      }
+    ]
+  },
+  {
+    "num": 696,
+    "name": "Tyrunt",
+    "type1": "fire",
+    "type2": "dragon",
+    "origin": "vanguard",
+    "image": "../images/tyrunt_v.png",
+    "hp": 68,
+    "atk": 89,
+    "def": 67,
+    "spa": 45,
+    "spd": 45,
+    "spe": 48,
+    "abilities": [
+      "Strong Jaw",
+      "Unnerve"
+    ],
+    "hiddenAbility": "Anger Point",
+    "height": "0.8 m",
+    "weight": "35.0 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Monster",
+      "Dragon"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Tail Whip",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Tackle",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Temper Flare",
+        "type": "fire"
+      },
+      {
+        "level": 1,
+        "move": "Ancient Power",
+        "type": "rock"
+      },
+      {
+        "level": 4,
+        "move": "Roar",
+        "type": "normal"
+      },
+      {
+        "level": 12,
+        "move": "Flame Charge",
+        "type": "fire"
+      },
+      {
+        "level": 16,
+        "move": "Bite",
+        "type": "dark"
+      },
+      {
+        "level": 20,
+        "move": "Dragon Tail",
+        "type": "dragon"
+      },
+      {
+        "level": 24,
+        "move": "Flame Wheel",
+        "type": "fire"
+      },
+      {
+        "level": 28,
+        "move": "Dragon Claw",
+        "type": "dragon"
+      },
+      {
+        "level": 32,
+        "move": "Fire Fang",
+        "type": "fire"
+      },
+      {
+        "level": 36,
+        "move": "Crunch",
+        "type": "dark"
+      },
+      {
+        "level": 42,
+        "move": "Mana Fangs",
+        "type": "dragon"
+      },
+      {
+        "level": 48,
+        "move": "Dragon Rush",
+        "type": "dragon"
+      },
+      {
+        "level": 54,
+        "move": "Heat Crash",
+        "type": "fire"
+      },
+      {
+        "level": 60,
+        "move": "Flare Blitz",
+        "type": "fire"
+      },
+      {
+        "level": 66,
+        "move": "Outrage",
+        "type": "dragon"
+      }
+    ]
+  },
+  {
+    "num": 697,
+    "name": "Tyrantrum",
+    "type1": "fire",
+    "type2": "dragon",
+    "origin": "vanguard",
+    "image": "../images/tyrantrum_v.png",
+    "hp": 92,
+    "atk": 121,
+    "def": 109,
+    "spa": 69,
+    "spd": 59,
+    "spe": 71,
+    "abilities": [
+      "Strong Jaw",
+      "Unnerve"
+    ],
+    "hiddenAbility": "Anger Point",
+    "height": "2.5 m",
+    "weight": "270.0 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Monster",
+      "Dragon"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Tail Whip",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Tackle",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Temper Flare",
+        "type": "fire"
+      },
+      {
+        "level": 1,
+        "move": "Ancient Power",
+        "type": "rock"
+      },
+      {
+        "level": 4,
+        "move": "Roar",
+        "type": "normal"
+      },
+      {
+        "level": 12,
+        "move": "Flame Charge",
+        "type": "fire"
+      },
+      {
+        "level": 16,
+        "move": "Bite",
+        "type": "dark"
+      },
+      {
+        "level": 20,
+        "move": "Dragon Tail",
+        "type": "dragon"
+      },
+      {
+        "level": 24,
+        "move": "Flame Wheel",
+        "type": "fire"
+      },
+      {
+        "level": 28,
+        "move": "Dragon Claw",
+        "type": "dragon"
+      },
+      {
+        "level": 32,
+        "move": "Fire Fang",
+        "type": "fire"
+      },
+      {
+        "level": 36,
+        "move": "Crunch",
+        "type": "dark"
+      },
+      {
+        "level": 42,
+        "move": "Mana Fangs",
+        "type": "dragon"
+      },
+      {
+        "level": 48,
+        "move": "Dragon Rush",
+        "type": "dragon"
+      },
+      {
+        "level": 54,
+        "move": "Heat Crash",
+        "type": "fire"
+      },
+      {
+        "level": 60,
+        "move": "Flare Blitz",
+        "type": "fire"
+      },
+      {
+        "level": 66,
+        "move": "Outrage",
+        "type": "dragon"
+      }
+    ]
+  },
+  {
+    "num": 557,
+    "name": "Dwebble",
+    "type1": "normal",
+    "type2": "fairy",
+    "origin": "delta",
+    "image": "../images/dwebble_d.png",
+    "hp": 50,
+    "atk": 65,
+    "def": 85,
+    "spa": 35,
+    "spd": 35,
+    "spe": 55,
+    "abilities": [
+      "Own Tempo",
+      "Scrappy"
+    ],
+    "hiddenAbility": "Simple",
+    "height": "0.3 m",
+    "weight": "14.5 kg",
+    "category": null,
+    "genderRatio": "50% \u2642",
+    "catchRate": 190,
+    "eggGroups": [
+      "Bug",
+      "Mineral"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Pound",
+        "type": "normal"
+      },
+      {
+        "level": 5,
+        "move": "Fairy Wind",
+        "type": "fairy"
+      },
+      {
+        "level": 7,
+        "move": "Sweet Scent",
+        "type": "normal"
+      },
+      {
+        "level": 11,
+        "move": "Mist",
+        "type": "ice"
+      },
+      {
+        "level": 13,
+        "move": "Powder Snow",
+        "type": "ice"
+      },
+      {
+        "level": 17,
+        "move": "Chip Away",
+        "type": "normal"
+      },
+      {
+        "level": 19,
+        "move": "Work Up",
+        "type": "normal"
+      },
+      {
+        "level": 23,
+        "move": "Dazzling Gleam",
+        "type": "fairy"
+      },
+      {
+        "level": 24,
+        "move": "Misty Terrain",
+        "type": "fairy"
+      },
+      {
+        "level": 31,
+        "move": "Aurora Beam",
+        "type": "ice"
+      },
+      {
+        "level": 35,
+        "move": "Play Rough",
+        "type": "fairy"
+      },
+      {
+        "level": 37,
+        "move": "Shell Smash",
+        "type": "normal"
+      },
+      {
+        "level": 41,
+        "move": "Flail",
+        "type": "normal"
+      },
+      {
+        "level": 43,
+        "move": "Giga Impact",
+        "type": "normal"
+      }
+    ]
+  },
+  {
+    "num": 558,
+    "name": "Crustle",
+    "type1": "normal",
+    "type2": "fairy",
+    "origin": "delta",
+    "image": "../images/crustle_d.png",
+    "hp": 80,
+    "atk": 105,
+    "def": 125,
+    "spa": 65,
+    "spd": 105,
+    "spe": 35,
+    "abilities": [
+      "Own Tempo",
+      "Scrappy"
+    ],
+    "hiddenAbility": "Simple",
+    "height": "1.4 m",
+    "weight": "200.0 kg",
+    "category": null,
+    "genderRatio": "50% \u2642",
+    "catchRate": 75,
+    "eggGroups": [
+      "Bug",
+      "Mineral"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Decorate",
+        "type": "fairy"
+      },
+      {
+        "level": 1,
+        "move": "Fairy Wind",
+        "type": "fairy"
+      },
+      {
+        "level": 1,
+        "move": "Sweet Scent",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Mist",
+        "type": "ice"
+      },
+      {
+        "level": 1,
+        "move": "Pound",
+        "type": "normal"
+      },
+      {
+        "level": 13,
+        "move": "Powder Snow",
+        "type": "ice"
+      },
+      {
+        "level": 17,
+        "move": "Chip Away",
+        "type": "normal"
+      },
+      {
+        "level": 19,
+        "move": "Work Up",
+        "type": "normal"
+      },
+      {
+        "level": 23,
+        "move": "Dazzling Gleam",
+        "type": "fairy"
+      },
+      {
+        "level": 24,
+        "move": "Misty Terrain",
+        "type": "fairy"
+      },
+      {
+        "level": 29,
+        "move": "Facade",
+        "type": "normal"
+      },
+      {
+        "level": 31,
+        "move": "Aurora Beam",
+        "type": "ice"
+      },
+      {
+        "level": 34,
+        "move": "Metal Claw",
+        "type": "steel"
+      },
+      {
+        "level": 38,
+        "move": "Play Rough",
+        "type": "fairy"
+      },
+      {
+        "level": 43,
+        "move": "Shell Smash",
+        "type": "normal"
+      },
+      {
+        "level": 50,
+        "move": "Flail",
+        "type": "normal"
+      },
+      {
+        "level": 55,
+        "move": "Giga Impact",
+        "type": "normal"
+      }
+    ]
+  },
+  {
+    "num": 136,
+    "name": "Flareon",
+    "type1": "fire",
+    "type2": "dark",
+    "origin": "kazeran",
+    "image": "../images/flareon_s.png",
+    "hp": 65,
+    "atk": 130,
+    "def": 70,
+    "spa": 95,
+    "spd": 100,
+    "spe": 90,
+    "abilities": [
+      "Cute Charm",
+      "Guts"
+    ],
+    "hiddenAbility": "Strong Jaw",
+    "height": "0.8 m",
+    "weight": "25.9 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Tail Whip",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Tackle",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Ember",
+        "type": "fire"
+      },
+      {
+        "level": 1,
+        "move": "Helping Hand",
+        "type": "normal"
+      },
+      {
+        "level": 5,
+        "move": "Sand Attack",
+        "type": "ground"
+      },
+      {
+        "level": 10,
+        "move": "Quick Attack",
+        "type": "normal"
+      },
+      {
+        "level": 15,
+        "move": "Baby-Doll Eyes",
+        "type": "fairy"
+      },
+      {
+        "level": 20,
+        "move": "Smog",
+        "type": "poison"
+      },
+      {
+        "level": 25,
+        "move": "Bite",
+        "type": "dark"
+      },
+      {
+        "level": 28,
+        "move": "Flame Charge",
+        "type": "fire"
+      },
+      {
+        "level": 30,
+        "move": "Fire Fang",
+        "type": "fire"
+      },
+      {
+        "level": 32,
+        "move": "Crunch",
+        "type": "dark"
+      },
+      {
+        "level": 35,
+        "move": "Flame Wheel",
+        "type": "fire"
+      },
+      {
+        "level": 40,
+        "move": "Blaze Kick",
+        "type": "fire"
+      },
+      {
+        "level": 45,
+        "move": "Flare Blitz",
+        "type": "fire"
+      },
+      {
+        "level": 50,
+        "move": "Raging Fury",
+        "type": "fire"
+      },
+      {
+        "level": 52,
+        "move": "Will-O-Wisp",
+        "type": "fire"
+      },
+      {
+        "level": 55,
+        "move": "Last Resort",
+        "type": "normal"
+      }
+    ]
+  },
+  {
+    "num": 419,
+    "name": "Floatzel",
+    "type1": "water",
+    "type2": "grass",
+    "origin": "stunderian",
+    "image": "../images/floatzel_s.png",
+    "hp": 85,
+    "atk": 115,
+    "def": 55,
+    "spa": 65,
+    "spd": 50,
+    "spe": 125,
+    "abilities": [
+      "Swift Swim",
+      "Mint Condition"
+    ],
+    "hiddenAbility": "Water Veil",
+    "height": "1.1 m",
+    "weight": "33.5 kg",
+    "category": null,
+    "genderRatio": "100% \u2642",
+    "catchRate": 75,
+    "eggGroups": [
+      "Water 1",
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Mint Rush",
+        "type": "grass"
+      },
+      {
+        "level": 1,
+        "move": "Ice Fang",
+        "type": "ice"
+      },
+      {
+        "level": 1,
+        "move": "Sonic Boom",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Growl",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Quick Attack",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Tackle",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Leafage",
+        "type": "grass"
+      },
+      {
+        "level": 13,
+        "move": "Razor Leaf",
+        "type": "grass"
+      },
+      {
+        "level": 15,
+        "move": "Water Gun",
+        "type": "water"
+      },
+      {
+        "level": 18,
+        "move": "Bite",
+        "type": "dark"
+      },
+      {
+        "level": 21,
+        "move": "Swift",
+        "type": "normal"
+      },
+      {
+        "level": 24,
+        "move": "Aqua Jet",
+        "type": "water"
+      },
+      {
+        "level": 29,
+        "move": "Double Hit",
+        "type": "normal"
+      },
+      {
+        "level": 35,
+        "move": "Whirlpool",
+        "type": "water"
+      },
+      {
+        "level": 41,
+        "move": "Liquidation",
+        "type": "water"
+      },
+      {
+        "level": 44,
+        "move": "Wood Hammer",
+        "type": "grass"
+      },
+      {
+        "level": 46,
+        "move": "Aqua Tail",
+        "type": "water"
+      },
+      {
+        "level": 51,
+        "move": "Agility",
+        "type": "psychic"
+      },
+      {
+        "level": 57,
+        "move": "Hydro Pump",
+        "type": "water"
+      },
+      {
+        "level": 62,
+        "move": "Wave Crash",
+        "type": "water"
+      }
+    ]
+  },
+  {
+    "num": 813,
+    "name": "Scorbunny",
+    "type1": "water",
+    "type2": "grass",
+    "origin": "stunderian",
+    "image": "../images/scorbunny_s.png",
+    "hp": 85,
+    "atk": 115,
+    "def": 55,
+    "spa": 65,
+    "spd": 50,
+    "spe": 125,
+    "abilities": [
+      "Swift Swim"
+    ],
+    "hiddenAbility": "Water Veil",
+    "height": "1.1 m",
+    "weight": "33.5 kg",
+    "category": null,
+    "genderRatio": "50% \u2642",
+    "catchRate": 75,
+    "eggGroups": [
+      "Water 1",
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Mint Rush",
+        "type": "grass"
+      },
+      {
+        "level": 1,
+        "move": "Ice Fang",
+        "type": "ice"
+      },
+      {
+        "level": 1,
+        "move": "Growl",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Quick Attack",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Leafage",
+        "type": "grass"
+      },
+      {
+        "level": 13,
+        "move": "Razor Leaf",
+        "type": "grass"
+      },
+      {
+        "level": 15,
+        "move": "Water Gun",
+        "type": "water"
+      },
+      {
+        "level": 18,
+        "move": "Bite",
+        "type": "dark"
+      },
+      {
+        "level": 21,
+        "move": "Swift",
+        "type": "normal"
+      },
+      {
+        "level": 24,
+        "move": "Aqua Jet",
+        "type": "water"
+      },
+      {
+        "level": 29,
+        "move": "Double Hit",
+        "type": "normal"
+      },
+      {
+        "level": 35,
+        "move": "Whirlpool",
+        "type": "water"
+      },
+      {
+        "level": 41,
+        "move": "Liquidation",
+        "type": "water"
+      },
+      {
+        "level": 44,
+        "move": "Wood Hammer",
+        "type": "grass"
+      },
+      {
+        "level": 46,
+        "move": "Aqua Tail",
+        "type": "water"
+      },
+      {
+        "level": 51,
+        "move": "Agility",
+        "type": "psychic"
+      },
+      {
+        "level": 57,
+        "move": "Hydro Pump",
+        "type": "water"
+      },
+      {
+        "level": 62,
+        "move": "Wave Crash",
+        "type": "water"
+      }
+    ]
+  },
+  {
+    "num": 814,
+    "name": "Raboot",
+    "type1": "water",
+    "type2": "grass",
+    "origin": "stunderian",
+    "image": "../images/raboot_s.png",
+    "hp": 85,
+    "atk": 115,
+    "def": 55,
+    "spa": 65,
+    "spd": 50,
+    "spe": 125,
+    "abilities": [
+      "Swift Swim"
+    ],
+    "hiddenAbility": "Water Veil",
+    "height": "1.1 m",
+    "weight": "33.5 kg",
+    "category": null,
+    "genderRatio": "50% \u2642",
+    "catchRate": 75,
+    "eggGroups": [
+      "Water 1",
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Mint Rush",
+        "type": "grass"
+      },
+      {
+        "level": 1,
+        "move": "Ice Fang",
+        "type": "ice"
+      },
+      {
+        "level": 1,
+        "move": "Growl",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Quick Attack",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Leafage",
+        "type": "grass"
+      },
+      {
+        "level": 13,
+        "move": "Razor Leaf",
+        "type": "grass"
+      },
+      {
+        "level": 15,
+        "move": "Water Gun",
+        "type": "water"
+      },
+      {
+        "level": 18,
+        "move": "Bite",
+        "type": "dark"
+      },
+      {
+        "level": 21,
+        "move": "Swift",
+        "type": "normal"
+      },
+      {
+        "level": 24,
+        "move": "Aqua Jet",
+        "type": "water"
+      },
+      {
+        "level": 29,
+        "move": "Double Hit",
+        "type": "normal"
+      },
+      {
+        "level": 35,
+        "move": "Whirlpool",
+        "type": "water"
+      },
+      {
+        "level": 41,
+        "move": "Liquidation",
+        "type": "water"
+      },
+      {
+        "level": 44,
+        "move": "Wood Hammer",
+        "type": "grass"
+      },
+      {
+        "level": 46,
+        "move": "Aqua Tail",
+        "type": "water"
+      },
+      {
+        "level": 51,
+        "move": "Agility",
+        "type": "psychic"
+      },
+      {
+        "level": 57,
+        "move": "Hydro Pump",
+        "type": "water"
+      },
+      {
+        "level": 62,
+        "move": "Wave Crash",
+        "type": "water"
+      }
+    ]
+  },
+  {
+    "num": 815,
+    "name": "Cinderace",
+    "type1": "water",
+    "type2": "grass",
+    "origin": "stunderian",
+    "image": "../images/cinderace_s.png",
+    "hp": 85,
+    "atk": 115,
+    "def": 55,
+    "spa": 65,
+    "spd": 50,
+    "spe": 125,
+    "abilities": [
+      "Swift Swim"
+    ],
+    "hiddenAbility": "Water Veil",
+    "height": "1.1 m",
+    "weight": "33.5 kg",
+    "category": null,
+    "genderRatio": "50% \u2642",
+    "catchRate": 75,
+    "eggGroups": [
+      "Water 1",
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Mint Rush",
+        "type": "grass"
+      },
+      {
+        "level": 1,
+        "move": "Ice Fang",
+        "type": "ice"
+      },
+      {
+        "level": 1,
+        "move": "Growl",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Quick Attack",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Leafage",
+        "type": "grass"
+      },
+      {
+        "level": 13,
+        "move": "Razor Leaf",
+        "type": "grass"
+      },
+      {
+        "level": 15,
+        "move": "Water Gun",
+        "type": "water"
+      },
+      {
+        "level": 18,
+        "move": "Bite",
+        "type": "dark"
+      },
+      {
+        "level": 21,
+        "move": "Swift",
+        "type": "normal"
+      },
+      {
+        "level": 24,
+        "move": "Aqua Jet",
+        "type": "water"
+      },
+      {
+        "level": 29,
+        "move": "Double Hit",
+        "type": "normal"
+      },
+      {
+        "level": 35,
+        "move": "Whirlpool",
+        "type": "water"
+      },
+      {
+        "level": 41,
+        "move": "Liquidation",
+        "type": "water"
+      },
+      {
+        "level": 44,
+        "move": "Wood Hammer",
+        "type": "grass"
+      },
+      {
+        "level": 46,
+        "move": "Aqua Tail",
+        "type": "water"
+      },
+      {
+        "level": 51,
+        "move": "Agility",
+        "type": "psychic"
+      },
+      {
+        "level": 57,
+        "move": "Hydro Pump",
+        "type": "water"
+      },
+      {
+        "level": 62,
+        "move": "Wave Crash",
+        "type": "water"
+      }
+    ]
+  },
+  {
+    "num": 471,
+    "name": "Glaceon",
+    "type1": "ice",
+    "type2": "poison",
+    "origin": "stunderian",
+    "image": "../images/glaceon_s.png",
+    "hp": 110,
+    "atk": 130,
+    "def": 60,
+    "spa": 120,
+    "spd": 95,
+    "spe": 60,
+    "abilities": [
+      "Snow Cloak",
+      "Serene Grace"
+    ],
+    "hiddenAbility": "Corrosion",
+    "height": "0.8 m",
+    "weight": "25.9 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Tail Whip",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Tackle",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Toxic",
+        "type": "poison"
+      },
+      {
+        "level": 1,
+        "move": "Helping Hand",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Icy Wind",
+        "type": "ice"
+      },
+      {
+        "level": 5,
+        "move": "Sand Attack",
+        "type": "ground"
+      },
+      {
+        "level": 10,
+        "move": "Quick Attack",
+        "type": "normal"
+      },
+      {
+        "level": 15,
+        "move": "Baby-Doll Eyes",
+        "type": "fairy"
+      },
+      {
+        "level": 20,
+        "move": "Ice Shard",
+        "type": "ice"
+      },
+      {
+        "level": 25,
+        "move": "Bite",
+        "type": "dark"
+      },
+      {
+        "level": 30,
+        "move": "Ice Fang",
+        "type": "ice"
+      },
+      {
+        "level": 32,
+        "move": "Poison Fang",
+        "type": "poison"
+      },
+      {
+        "level": 35,
+        "move": "Iron Tail",
+        "type": "steel"
+      },
+      {
+        "level": 40,
+        "move": "Freeze-Dry",
+        "type": "ice"
+      },
+      {
+        "level": 45,
+        "move": "Gunk Shot",
+        "type": "poison"
+      },
+      {
+        "level": 50,
+        "move": "Blizzard",
+        "type": "ice"
+      },
+      {
+        "level": 55,
+        "move": "Last Resort",
+        "type": "normal"
+      }
+    ]
+  },
+  {
+    "num": 151,
+    "name": "Mew",
+    "type1": "psychic",
+    "type2": null,
+    "origin": "stunderian",
+    "image": "../images/mew_s.png",
+    "hp": 100,
+    "atk": 90,
+    "def": 100,
+    "spa": 110,
+    "spd": 100,
+    "spe": 100,
+    "abilities": [
+      "Synchronize",
+      "Frozen Heart"
+    ],
+    "hiddenAbility": "Thermal Bloom",
+    "height": "0.4 m",
+    "weight": "4.0 kg",
+    "category": null,
+    "genderRatio": "Genderless",
+    "catchRate": 45,
+    "eggGroups": [
+      "Undiscovered"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Pound",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Ice Shard",
+        "type": "ice"
+      },
+      {
+        "level": 10,
+        "move": "Amnesia",
+        "type": "psychic"
+      },
+      {
+        "level": 20,
+        "move": "Baton Pass",
+        "type": "normal"
+      },
+      {
+        "level": 30,
+        "move": "Ancient Power",
+        "type": "rock"
+      },
+      {
+        "level": 40,
+        "move": "Ice Fang",
+        "type": "ice"
+      },
+      {
+        "level": 50,
+        "move": "Nasty Plot",
+        "type": "dark"
+      },
+      {
+        "level": 60,
+        "move": "Freeze-Dry",
+        "type": "ice"
+      },
+      {
+        "level": 70,
+        "move": "Imprison",
+        "type": "psychic"
+      },
+      {
+        "level": 80,
+        "move": "Ice Beam",
+        "type": "ice"
+      },
+      {
+        "level": 90,
+        "move": "Blizzard",
+        "type": "ice"
+      },
+      {
+        "level": 100,
+        "move": "Psychic",
+        "type": "psychic"
+      }
+    ]
+  },
+  {
+    "num": 728,
+    "name": "Popplio",
+    "type1": "water",
+    "type2": null,
+    "origin": "stunderian",
+    "image": "../images/Popplio_s.png",
+    "hp": 50,
+    "atk": 54,
+    "def": 54,
+    "spa": 66,
+    "spd": 46,
+    "spe": 50,
+    "abilities": [
+      "Torrent"
+    ],
+    "hiddenAbility": "Pickpocket",
+    "height": "0.4 m",
+    "weight": "7.5 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Water 1",
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Pound",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Growl",
+        "type": "normal"
+      },
+      {
+        "level": 3,
+        "move": "Water Gun",
+        "type": "water"
+      },
+      {
+        "level": 6,
+        "move": "Confusion",
+        "type": "psychic"
+      },
+      {
+        "level": 9,
+        "move": "Aqua Jet",
+        "type": "water"
+      },
+      {
+        "level": 12,
+        "move": "Baby-Doll Eyes",
+        "type": "fairy"
+      },
+      {
+        "level": 15,
+        "move": "Icy Wind",
+        "type": "ice"
+      },
+      {
+        "level": 18,
+        "move": "Hypnosis",
+        "type": "psychic"
+      },
+      {
+        "level": 21,
+        "move": "Bubble Beam",
+        "type": "water"
+      },
+      {
+        "level": 24,
+        "move": "Trick",
+        "type": "psychic"
+      },
+      {
+        "level": 27,
+        "move": "Psychic Terrain",
+        "type": "psychic"
+      },
+      {
+        "level": 30,
+        "move": "Psychic Noise",
+        "type": "psychic"
+      },
+      {
+        "level": 33,
+        "move": "Future Sight",
+        "type": "psychic"
+      },
+      {
+        "level": 36,
+        "move": "Hydro Pump",
+        "type": "water"
+      }
+    ]
+  },
+  {
+    "num": 729,
+    "name": "Brionne",
+    "type1": "water",
+    "type2": null,
+    "origin": "stunderian",
+    "image": "../images/brionne_s.png",
+    "hp": 60,
+    "atk": 69,
+    "def": 69,
+    "spa": 91,
+    "spd": 71,
+    "spe": 60,
+    "abilities": [
+      "Torrent"
+    ],
+    "hiddenAbility": "Pickpocket",
+    "height": "0.6 m",
+    "weight": "17.5 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Water 1",
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Pound",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Hypnosis",
+        "type": "psychic"
+      },
+      {
+        "level": 1,
+        "move": "Water Gun",
+        "type": "water"
+      },
+      {
+        "level": 1,
+        "move": "Growl",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Confusion",
+        "type": "psychic"
+      },
+      {
+        "level": 9,
+        "move": "Aqua Jet",
+        "type": "water"
+      },
+      {
+        "level": 12,
+        "move": "Baby-Doll Eyes",
+        "type": "fairy"
+      },
+      {
+        "level": 15,
+        "move": "Icy Wind",
+        "type": "ice"
+      },
+      {
+        "level": 20,
+        "move": "Foul Play",
+        "type": "dark"
+      },
+      {
+        "level": 25,
+        "move": "Bubble Beam",
+        "type": "water"
+      },
+      {
+        "level": 30,
+        "move": "Trick",
+        "type": "psychic"
+      },
+      {
+        "level": 35,
+        "move": "Psychic Terrain",
+        "type": "psychic"
+      },
+      {
+        "level": 40,
+        "move": "Psychic Noise",
+        "type": "psychic"
+      },
+      {
+        "level": 45,
+        "move": "Psychic",
+        "type": "psychic"
+      },
+      {
+        "level": 50,
+        "move": "Hydro Pump",
+        "type": "water"
+      }
+    ]
+  },
+  {
+    "num": 730,
+    "name": "Primarina",
+    "type1": "water",
+    "type2": "psychic",
+    "origin": "stunderian",
+    "image": "../images/Primarina_s.png",
+    "hp": 80,
+    "atk": 69,
+    "def": 75,
+    "spa": 130,
+    "spd": 104,
+    "spe": 75,
+    "abilities": [
+      "Torrent"
+    ],
+    "hiddenAbility": "Magician",
+    "height": "1.8 m",
+    "weight": "44.0 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Water 1",
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Sparkling Aria",
+        "type": "water"
+      },
+      {
+        "level": 1,
+        "move": "Four of a Kind",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Pound",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Water Gun",
+        "type": "water"
+      },
+      {
+        "level": 1,
+        "move": "Growl",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Confusion",
+        "type": "psychic"
+      },
+      {
+        "level": 9,
+        "move": "Aqua Jet",
+        "type": "water"
+      },
+      {
+        "level": 12,
+        "move": "Baby-Doll Eyes",
+        "type": "fairy"
+      },
+      {
+        "level": 15,
+        "move": "Icy Wind",
+        "type": "ice"
+      },
+      {
+        "level": 20,
+        "move": "Hypnosis",
+        "type": "psychic"
+      },
+      {
+        "level": 25,
+        "move": "Bubble Beam",
+        "type": "water"
+      },
+      {
+        "level": 30,
+        "move": "Trick",
+        "type": "psychic"
+      },
+      {
+        "level": 37,
+        "move": "Psychic Terrain",
+        "type": "psychic"
+      },
+      {
+        "level": 44,
+        "move": "Psychic Noise",
+        "type": "psychic"
+      },
+      {
+        "level": 51,
+        "move": "Future Sight",
+        "type": "psychic"
+      },
+      {
+        "level": 58,
+        "move": "Hydro Pump",
+        "type": "water"
+      }
+    ]
+  },
+  {
+    "num": 393,
+    "name": "Piplup",
+    "type1": "fire",
+    "type2": null,
+    "origin": "stunderian",
+    "image": "../images/piplup_s.png",
+    "hp": 53,
+    "atk": 61,
+    "def": 55,
+    "spa": 51,
+    "spd": 54,
+    "spe": 40,
+    "abilities": [
+      "Blaze"
+    ],
+    "hiddenAbility": "Hot Streak",
+    "height": "0.4 m",
+    "weight": "5.2 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Pound",
+        "type": "normal"
+      },
+      {
+        "level": 4,
+        "move": "Growl",
+        "type": "normal"
+      },
+      {
+        "level": 8,
+        "move": "Ember",
+        "type": "fire"
+      },
+      {
+        "level": 11,
+        "move": "Charm",
+        "type": "fairy"
+      },
+      {
+        "level": 15,
+        "move": "Peck",
+        "type": "flying"
+      },
+      {
+        "level": 18,
+        "move": "Flame Charge",
+        "type": "fire"
+      },
+      {
+        "level": 22,
+        "move": "Swagger",
+        "type": "normal"
+      },
+      {
+        "level": 25,
+        "move": "Fury Attack",
+        "type": "normal"
+      },
+      {
+        "level": 29,
+        "move": "Steel Wing",
+        "type": "steel"
+      },
+      {
+        "level": 32,
+        "move": "Fire Spin",
+        "type": "fire"
+      },
+      {
+        "level": 36,
+        "move": "Will-O-Wisp",
+        "type": "fire"
+      },
+      {
+        "level": 39,
+        "move": "Drill Peck",
+        "type": "flying"
+      },
+      {
+        "level": 43,
+        "move": "Flare Blitz",
+        "type": "fire"
+      }
+    ]
+  },
+  {
+    "num": 394,
+    "name": "Prinplup",
+    "type1": "fire",
+    "type2": "steel",
+    "origin": "stunderian",
+    "image": "../images/prinplup_s.png",
+    "hp": 64,
+    "atk": 81,
+    "def": 72,
+    "spa": 66,
+    "spd": 72,
+    "spe": 50,
+    "abilities": [
+      "Blaze"
+    ],
+    "hiddenAbility": "Hot Streak",
+    "height": "0.8 m",
+    "weight": "23.0 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Tackle",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Growl",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Ember",
+        "type": "fire"
+      },
+      {
+        "level": 1,
+        "move": "Metal Claw",
+        "type": "steel"
+      },
+      {
+        "level": 15,
+        "move": "Peck",
+        "type": "flying"
+      },
+      {
+        "level": 19,
+        "move": "Flame Charge",
+        "type": "fire"
+      },
+      {
+        "level": 24,
+        "move": "Swagger",
+        "type": "normal"
+      },
+      {
+        "level": 28,
+        "move": "Fury Attack",
+        "type": "normal"
+      },
+      {
+        "level": 33,
+        "move": "Steel Wing",
+        "type": "steel"
+      },
+      {
+        "level": 37,
+        "move": "Fire Spin",
+        "type": "fire"
+      },
+      {
+        "level": 42,
+        "move": "Will-O-Wisp",
+        "type": "fire"
+      },
+      {
+        "level": 46,
+        "move": "Drill Peck",
+        "type": "flying"
+      },
+      {
+        "level": 50,
+        "move": "Flare Blitz",
+        "type": "fire"
+      }
+    ]
+  },
+  {
+    "num": 395,
+    "name": "Empoleon",
+    "type1": "fire",
+    "type2": "steel",
+    "origin": "stunderian",
+    "image": "../images/empoleon_s.png",
+    "hp": 84,
+    "atk": 111,
+    "def": 88,
+    "spa": 95,
+    "spd": 94,
+    "spe": 60,
+    "abilities": [
+      "Blaze"
+    ],
+    "hiddenAbility": "Hot Streak",
+    "height": "1.7 m",
+    "weight": "84.5 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Field"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Tackle",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Growl",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Metal Claw",
+        "type": "steel"
+      },
+      {
+        "level": 1,
+        "move": "Tic-Tac-Torch",
+        "type": "fire"
+      },
+      {
+        "level": 1,
+        "move": "Ember",
+        "type": "fire"
+      },
+      {
+        "level": 11,
+        "move": "Swords Dance",
+        "type": "normal"
+      },
+      {
+        "level": 15,
+        "move": "Peck",
+        "type": "flying"
+      },
+      {
+        "level": 19,
+        "move": "Flame Charge",
+        "type": "fire"
+      },
+      {
+        "level": 24,
+        "move": "Swagger",
+        "type": "normal"
+      },
+      {
+        "level": 28,
+        "move": "Fury Attack",
+        "type": "normal"
+      },
+      {
+        "level": 33,
+        "move": "Steel Wing",
+        "type": "steel"
+      },
+      {
+        "level": 39,
+        "move": "Fire Spin",
+        "type": "fire"
+      },
+      {
+        "level": 46,
+        "move": "Will-O-Wisp",
+        "type": "fire"
+      },
+      {
+        "level": 52,
+        "move": "Drill Peck",
+        "type": "flying"
+      },
+      {
+        "level": 59,
+        "move": "Flare Blitz",
+        "type": "fire"
+      },
+      {
+        "level": 66,
+        "move": "Meteor Mash",
+        "type": "steel"
+      }
+    ]
+  },
+  {
+    "num": 245,
+    "name": "Suicune",
+    "type1": "water",
+    "type2": "ice",
+    "origin": "stunderian",
+    "image": "../images/suicune_s.png",
+    "hp": 100,
+    "atk": 65,
+    "def": 120,
+    "spa": 80,
+    "spd": 120,
+    "spe": 95,
+    "abilities": [
+      "Drizzle"
+    ],
+    "hiddenAbility": "Hydration",
+    "height": "2.0 m",
+    "weight": "187.0 kg",
+    "category": null,
+    "genderRatio": "Genderless",
+    "catchRate": 3,
+    "eggGroups": [
+      "Undiscovered"
+    ],
+    "notes": null,
+    "learnset": [
+      {
+        "level": 1,
+        "move": "Leer",
+        "type": "normal"
+      },
+      {
+        "level": 1,
+        "move": "Bubble Beam",
+        "type": "water"
+      },
+      {
+        "level": 1,
+        "move": "Gust",
+        "type": "flying"
+      },
+      {
+        "level": 1,
+        "move": "Aurora Beam",
+        "type": "ice"
+      },
+      {
+        "level": 1,
+        "move": "Mist",
+        "type": "ice"
+      },
+      {
+        "level": 1,
+        "move": "Sheer Cold",
+        "type": "ice"
+      },
+      {
+        "level": 1,
+        "move": "Extreme Speed",
+        "type": "normal"
+      },
+      {
+        "level": 6,
+        "move": "Water Pulse",
+        "type": "water"
+      },
+      {
+        "level": 12,
+        "move": "Bite",
+        "type": "dark"
+      },
+      {
+        "level": 18,
+        "move": "Calm Mind",
+        "type": "psychic"
+      },
+      {
+        "level": 24,
+        "move": "Roar",
+        "type": "normal"
+      },
+      {
+        "level": 30,
+        "move": "Ice Fang",
+        "type": "ice"
+      },
+      {
+        "level": 36,
+        "move": "Tailwind",
+        "type": "flying"
+      },
+      {
+        "level": 42,
+        "move": "Crunch",
+        "type": "dark"
+      },
+      {
+        "level": 48,
+        "move": "Extrasensory",
+        "type": "psychic"
+      },
+      {
+        "level": 54,
+        "move": "Surf",
+        "type": "water"
+      },
+      {
+        "level": 60,
+        "move": "Mirror Coat",
+        "type": "psychic"
+      },
+      {
+        "level": 66,
+        "move": "Rain Dance",
+        "type": "water"
+      },
+      {
+        "level": 72,
+        "move": "Hydro Pump",
+        "type": "water"
+      },
+      {
+        "level": 78,
+        "move": "Blizzard",
+        "type": "ice"
+      }
+    ]
+  },
+  {
+    "num": 470,
+    "name": "Leafeon",
+    "type1": "grass",
+    "type2": "ghost",
+    "origin": "kazeran",
+    "image": "../images/leafeon_k.png",
+    "hp": 130,
+    "atk": 110,
+    "def": 65,
+    "spa": 65,
+    "spd": 60,
+    "spe": 95,
+    "abilities": [
+        "Withering Aura",
+        "Cursed Body"
+    ],
+    "hiddenAbility": "Shadow Tag",
+    "height": "2.0 m",
+    "weight": "187.0 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Field"
+    ],
+    "notes": null
+  },
+  {
+    "num": 135,
+    "name": "Jolteon",
+    "type1": "electric",
+    "type2": "ground",
+    "origin": "kazeran",
+    "image": "../images/jolteon_k.png",
+    "hp": 60,
+    "atk": 65,
+    "def": 95,
+    "spa": 110,
+    "spd": 65,
+    "spe": 130,
+    "abilities": [
+        "Lightning Rod",
+        "Magnetic Flux"
+    ],
+    "hiddenAbility": "Sand Rush",
+    "height": "2.0 m",
+    "weight": "187.0 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Field"
+    ]
+  },
+  {
+    "num": 890,
+    "name": "Eternatus",
+    "type1": "poison",
+    "type2": "dragon",
+    "origin": "stunderian",
+    "image": "../images/eternatus_s.png",
+    "hp": 210,
+    "atk": 100,
+    "def": 140,
+    "spa": 110,
+    "spd": 150,
+    "spe": 80,
+    "abilities": [
+        "Pressure"
+    ],
+    "height": "2.0 m",
+    "weight": "187.0 kg",
+    "genderRatio": "Genderless",
+    "catchRate": 3,
+    "notes": null
+  },
+  {
+    "num": 196,
+    "name": "Espeon",
+    "type1": "psychic",
+    "type2": "steel",
+    "origin": "kazeran",
+    "image": "../images/espeon_k.png",
+    "hp": 65,
+    "atk": 60,
+    "def": 110,
+    "spa": 95,
+    "spd": 130,
+    "spe": 65,
+    "abilities": [
+        "Levitate",
+        "Psychic Surge"
+    ],
+    "hiddenAbility": "Prism Capacitor",
+    "height": "2.0 m",
+    "weight": "187.0 kg",
+    "category": null,
+    "genderRatio": "87.5% \u2642",
+    "catchRate": 45,
+    "eggGroups": [
+      "Field"
+    ],
+    "notes": null
+  }
+]

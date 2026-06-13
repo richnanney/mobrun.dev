@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "name": "Bramble Shot",
+    "type": "grass",
+    "category": "Special",
+    "power": 120,
+    "accuracy": 90,
+    "pp": 5,
+    "priority": 0,
+    "description": "10% to decrease evasion on hit. Is a bullet move."
+  },
+  {
+    "id": 2,
+    "name": "Tic-Tac-Torch",
+    "type": "fire",
+    "category": "Physical",
+    "power": 75,
+    "accuracy": 100,
+    "pp": 10,
+    "description": "Deals damage based on the user's speed. 20% chance to raise speed on hit. Makes contact."
+  },
+  {
+    "id": 3,
+    "name": "Four of a Kind",
+    "type": "psychic",
+    "category": "Special",
+    "power": 20,
+    "accuracy": 100,
+    "pp": 10,
+    "description": "Multi-hit move that can hit between 2-4 times. The fourth hit always crits."
+  }
+]
