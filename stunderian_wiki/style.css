@@ -10,7 +10,6 @@
   --text: #d4d6dc;
   --text-dim: #8a8f9e;
   --text-bright: #f0f2f5;
-  --modded: #c47fd4;
   --type-normal: #9fa19f; --type-fire: #e6533e; --type-water: #559edf;
   --type-grass: #62b957; --type-electric: #f0d050; --type-ice: #78c4da;
   --type-fighting: #ce4069; --type-poison: #a43ec4; --type-ground: #d78855;
@@ -127,6 +126,8 @@ body {
 .origin-btn.delta.active { background: #62b957; color: #111; border-color: #62b957; }
 .origin-btn.kazeran { color: #e6533e; border-color: #ce4069; margin-left: 4px; }
 .origin-btn.kazeran.active { background: #e6533e; color: #111; border-color: #ce4069; }
+.origin-btn.twilight { color: #3dc3d5; border-color: #2f8c98; margin-left: 4px; }
+.origin-btn.twilight.active { background: #2fa6b6; color: #111; border-color: #2f8c98; }
 .origin-btn:hover { opacity: 0.85; }
 
 /* Hide origin controls when not on species tab */
@@ -206,7 +207,7 @@ body {
 .species-table tbody tr:hover { background: var(--surface2); }
 .species-table tbody tr.selected { background: #2d3040; }
 
-.num-cell { color: var(--text-dim); font-size: 0.8rem; }
+.id-cell { color: var(--text-dim); font-size: 0.8rem; }
 .name-cell { color: var(--text-bright); font-weight: 700; }
 .origin-tag {
   font-size: 0.7rem;
@@ -217,9 +218,12 @@ body {
   letter-spacing: 0.3px;
 }
 .origin-tag.stunderian { background: #3a1a50; color: #c47fd4; }
+.origin-tag.Meri       { background: #3a1a50; color: #c47fd4; }
 .origin-tag.vanguard   { background: #4a2808; color: #e88040; }
 .origin-tag.delta      { background: #1a3a18; color: #62b957; }
 .origin-tag.kazeran    { background: #3b131e; color: #ce4069; }
+.origin-tag.twilight   { background: #132a3b; color: #2f8c98; }
+
 
 
 /* ─── Stat bar ─── */
@@ -263,12 +267,12 @@ body {
   background: var(--surface2);
   border-radius: var(--radius);
   padding: 12px 0 4px;
-  min-height: 160px;
+  height: 350px;
 }
 .detail-sprite img {
-  max-width: 160px;
-  max-height: 160px;
-  image-rendering: auto;
+  max-width: 250px;
+  max-height: 325px;
+  image-rendering: smooth;
   object-fit: contain;
 }
 
@@ -284,7 +288,7 @@ body {
   color: var(--text-bright);
   line-height: 1.1;
 }
-.detail-num { font-size: 0.85rem; color: var(--text-dim); margin-top: 2px; }
+.detail-id { font-size: 0.85rem; color: var(--text-dim); margin-top: 2px; }
 .close-btn {
   background: var(--surface2);
   border: 1px solid var(--border);

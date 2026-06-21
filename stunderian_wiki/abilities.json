@@ -1,37 +1,52 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "name": "Magnetix Flux",
     "details": "Electric type damaging moves have a 50% chance to slow the target."
   },
   {
-    "id": "2",
+    "id": 2,
     "name": "Frozen Heart",
     "details": "Ice type moves deal 50% more damage."
   },
   {
-    "id": "3",
-    "name": "Thermal Bloom",
-    "details": "User heals 10% hp every turn under sun or hail/snow. Fire type moves are boosted by 25% in the hail/snow, and ice type moves are boosted by 25% in the sun."
-  },
-  {
-    "id": "4",
+    "id": 3,
     "name": "Prism Capacitor",
     "details": "The user's next Psychic type attack after taking damage from a special move deals 50% move damage."
   },
   {
-    "id": "5",
+    "id": 4,
     "name": "Hot Streak",
     "details": "User is immune to fire type attacks, and receives a speed boost upon being hit by one."
   },
   {
-    "id": "6",
+    "id": 5,
     "name": "Mint Condition",
     "details": "Gains attack and speed when hit by a grass type move, or when grassy terrain is set."
   },
   {
-    "id": "7",
+    "id": 6,
     "name": "Withering Aura",
     "details": "User steals 1/8th of an attackers max HP when hit by a contact move."
+  },
+  {
+    "id": 7,
+    "name": "Sand Bath",
+    "details": "User is cured of status effects during sandstorms."
+  },
+  {
+    "id": 8,
+    "name": "Encaptivate",
+    "details": "Lowers opposing Special Attack on switch in."
+  },
+  {
+    "id": 9,
+    "name": "Shadow Striker",
+    "details": "Dark type moves have a 25% chance to flinch."
+  },
+  {
+    "id": 10,
+    "name": "Thermal Bloom",
+    "details": "In sun or snow, heal 10% max hp per turn. Ice moves in Sun and Fire moves in Snow deal 25% more damage."
   }
 ]

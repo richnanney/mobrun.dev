@@ -29,5 +29,94 @@
     "accuracy": 100,
     "pp": 10,
     "description": "Multi-hit move that can hit between 2-4 times. The fourth hit always crits."
+  },
+  {
+    "id": 4,
+    "name": "Shockwave Slam",
+    "type": "electric",
+    "category": "Special",
+    "power": 100,
+    "accuracy": 100,
+    "pp": 10,
+    "description": "On hit, lowers the speed of the target. This move is both Ground and Electric type. This move is not legal in a sky battle, for some reason."
+  },
+  {
+    "id": 5,
+    "name": "Phantom Bloom",
+    "type": "grass",
+    "category": "Physical",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 10,
+    "description": "On hit, places a curse on non-Ghost types. This move is super effective against Ghost types. 25% recoil."
+  },
+    {
+    "id": 6,
+    "name": "Petal Encore",
+    "type": "grass",
+    "category": "Special",
+    "power": 70,
+    "accuracy": 100,
+    "pp": 10,
+    "description": "This move can't miss and will always crit."
+  },
+  {
+    "id": 7,
+    "name": "Radiant Descent",
+    "type": "dark",
+    "category": "Special",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 10,
+    "description": "Lowers target's defense and special defense on hit."
+  },
+  {
+    "id": 8,
+    "name": "Mana Fangs",
+    "type": "dragon",
+    "category": "Physical",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 10,
+    "description": "Heals 75% of damage dealt. Makes contact. Is a biting move."
+  },
+  {
+    "id": 9,
+    "name": "Max Pitch Punt",
+    "type": "grass",
+    "category": "Special",
+    "power": 160,
+    "accuracy": 100,
+    "pp": 5,
+    "description": "G-max move exclusive to Stunderian Cinderace. Ignores abilities."
+  },
+  {
+    "id": 10,
+    "name": "Metal Storm",
+    "type": "psychic",
+    "category": "Special",
+    "power": 25,
+    "accuracy": 100,
+    "pp": 5,
+    "description": "Multi-hit move that can hit 2-5 times. Deals physical damage. Has a 30% chance to lower special defense of target on hit."
+  },
+  {
+    "id": 11,
+    "name": "Mint Rush",
+    "type": "grass",
+    "category": "Physical",
+    "power": 50,
+    "accuracy": 100,
+    "pp": 10,
+    "description": "Priority move that sets Grassy Terrain on hit."
+  },
+  {
+    "id": 12,
+    "name": "Astral Infection",
+    "type": "poison",
+    "category": "Status",
+    "accuracy": 100,
+    "pp": 20,
+    "description": "Gives the target the Poison type."
   }
 ]
