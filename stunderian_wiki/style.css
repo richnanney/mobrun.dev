@@ -30,12 +30,16 @@ body {
 
 /* ─── Top Nav ─── */
 .topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
   display: flex;
   align-items: center;
   background: var(--surface);
   border-bottom: 2px solid var(--border);
   height: 48px;
-  flex-shrink: 0;
 }
 .topnav-inner {
   max-width: 1100px;
@@ -128,6 +132,8 @@ body {
 .origin-btn.kazeran.active { background: #e6533e; color: #111; border-color: #ce4069; }
 .origin-btn.twilight { color: #3dc3d5; border-color: #2f8c98; margin-left: 4px; }
 .origin-btn.twilight.active { background: #2fa6b6; color: #111; border-color: #2f8c98; }
+.origin-btn.lostlore { color: #e840c4; border-color: #7a1078; margin-left: 4px; }
+.origin-btn.lostlore.active { background: #e840c4; color: #111; border-color: #7a1078; }
 .origin-btn:hover { opacity: 0.85; }
 
 /* Hide origin controls when not on species tab */
@@ -140,13 +146,18 @@ body {
   flex: 1;
   overflow: hidden;
   height: calc(100vh - 48px);
+  margin-top: 48px;
 }
-
 /* ─── Content Area ─── */
 .content-area {
   flex: 1;
   overflow-y: auto;
   position: relative;
+  margin-right: 0;
+  transition: margin-right 0.25s ease;
+}
+.content-area.panel-open {
+  margin-right: 320px;
 }
 .content-wrap {
   max-width: 1100px;
@@ -223,6 +234,7 @@ body {
 .origin-tag.delta      { background: #1a3a18; color: #62b957; }
 .origin-tag.kazeran    { background: #3b131e; color: #ce4069; }
 .origin-tag.twilight   { background: #132a3b; color: #2f8c98; }
+.origin-tag.lostlore   { background: #3b1336; color: #e840c4; }
 
 
 
@@ -235,15 +247,20 @@ body {
 
 /* ─── Detail Panel (side drawer) ─── */
 .detail-panel {
+  position: fixed;
+  top: 48px;
+  right: 0;
   width: 0;
   min-width: 0;
+  height: calc(100vh - 48px);
+  min-height: 0;
   background: var(--surface);
   border-left: 1px solid var(--border);
   overflow: hidden;
   transition: width 0.25s ease, min-width 0.25s ease;
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
+  z-index: 10;
 }
 .detail-panel.open {
   width: 320px;

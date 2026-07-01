@@ -32,6 +32,7 @@
       <button class="origin-btn kazeran" data-origin="kazeran">Kazeran</button>
       <button class="origin-btn vanguard" data-origin="vanguard">Vanguard</button>
       <button class="origin-btn delta" data-origin="delta">Delta</button>
+      <button class="origin-btn lostlore" data-origin="lostlore">Lost Lore</button>
     </div>
   </div>
 </nav>
@@ -39,7 +40,7 @@
 <!-- ─── Main Layout ─── -->
 <div class="main">
   <!-- ─── Content Area ─── -->
-  <div class="content-area">
+  <div class="content-area" id="contentArea">
     <!-- Species Table -->
     <div id="speciesView">
       <div class="content-wrap">
@@ -468,6 +469,19 @@ $('searchInput').addEventListener('input', e => {
   searchQuery = e.target.value.trim();
   renderActiveTab();
 });
+// Prevent panel scroll from bleeding into the main content area.
+// When the wheel event fires inside the panel, we manually scroll
+// detail-inner and stop the event from propagating to the page.
+$('detailPanel').addEventListener('wheel', e => {
+  const inner = $('detailInner');
+  const { scrollTop, scrollHeight, clientHeight } = inner;
+  const atTop    = scrollTop === 0 && e.deltaY < 0;
+  const atBottom = scrollTop + clientHeight >= scrollHeight && e.deltaY > 0;
+  if (atTop || atBottom) {
+    e.preventDefault();
+  }
+  e.stopPropagation();
+}, { passive: false });
 </script>
 </body>
 </html>

@@ -118,5 +118,121 @@
     "accuracy": 100,
     "pp": 20,
     "description": "Gives the target the Poison type."
+  },
+  {
+    "id": 13,
+    "name": "Shadow Shed",
+    "type": "ghost",
+    "category": "Status",
+    "accuracy": 100,
+    "pp": 5,
+    "description": "Removes Substitute, Screens, and Entry Hazards from target."
+  },
+  {
+    "id": 14,
+    "name": "Shadow Storm",
+    "type": "ghost",
+    "category": "Special",
+    "accuracy": 100,
+    "power": 95,
+    "pp": 5,
+    "description": "Hits all opponents. Cannot do 4x damage."
+  },
+  {
+    "id": 15,
+    "name": "Shadow Down",
+    "type": "ghost",
+    "category": "Status",
+    "accuracy": 100,
+    "pp": 10,
+    "description": "Harshly lowers attack of all opponents."
+  },
+  {
+    "id": 20,
+    "name": "Crystalline Overload",
+    "type": "rock",
+    "category": "Soecuak",
+    "accuracy": 95,
+    "power": 130,
+    "pp": 5,
+    "description": "Harshly lowers own special attack on hit. Makes contact."
+  },
+  {
+    "id": 17,
+    "name": "Crystal Barrier",
+    "type": "rock",
+    "category": "Status",
+    "accuracy": 100,
+    "pp": 15,
+    "description": "Defense +2, Speed -1."
+  },
+  {
+    "id": 18,
+    "name": "Crystal Cannon",
+    "type": "rock",
+    "category": "Special",
+    "accuracy": 100,
+    "power": 80,
+    "pp": 10,
+    "description": "15% chance to burn target."
+  },
+  {
+    "id": 19,
+    "name": "Shard Strike",
+    "type": "rock",
+    "category": "Physical",
+    "accuracy": 100,
+    "power": 40,
+    "pp": 30,
+    "description": "Makes contact."
+  },
+  {
+    "id": 16,
+    "name": "Shadow Blast",
+    "type": "ghost",
+    "category": "Physical",
+    "accuracy": 100,
+    "power": 80,
+    "pp": 5,
+    "description": "Increased crit chance. Is a Wind move. Cannot deal 4x effective damage."
+  },
+  {
+    "id": 21,
+    "name": "Kaiju Cataclysm",
+    "type": "rock",
+    "category": "Physical",
+    "accuracy": 100,
+    "power": 200,
+    "pp": 1,
+    "description": "Z-move exclusive to Black Tyranitar. Always flinches, increases Defense and Special Defense, clears terrain, bypasses substitute, makes contact damage, and hits all opponents."
+  },
+  {
+    "id": 22,
+    "name": "Shiny Glare",
+    "type": "rock",
+    "category": "Status",
+    "accuracy": 100,
+    "pp": 5,
+    "description": "Traps target."
+  },
+  {
+    "id": 23,
+    "name": "Unstable Surge",
+    "type": "rock",
+    "category": "Special",
+    "accuracy": 90,
+    "power": 130,
+    "pp": 10,
+    "description": "If this move misses, the user takes half Max HP in crash damage."
+  }
+  ,
+  {
+    "id": 24,
+    "name": "Crystal Veil",
+    "type": "rock",
+    "category": "Status",
+    "accuracy": 100,
+    "pp": 15,
+    "description": "Lowers accuracy by one stage."
   }
 ]

@@ -48,5 +48,45 @@
     "id": 10,
     "name": "Thermal Bloom",
     "details": "In sun or snow, heal 10% max hp per turn. Ice moves in Sun and Fire moves in Snow deal 25% more damage."
+  },
+  {
+    "id": 11,
+    "name": "Hall of Mirrors",
+    "details": "Flash cannon now is guarenteed to lower enemy Special Defense."
+  },
+  {
+    "id": 12,
+    "name": "Frosty Winds",
+    "details": "Wind moves are 50% stronger and 10% more accurate."
+  },
+  {
+    "id": 13,
+    "name": "Crystalline",
+    "details": "Rock type attacking moves used by this Pokemon are instead Steel type, and are 20% stronger."
+  },
+  {
+    "id": 14,
+    "name": "Film Script",
+    "details": "Attacking a Pokemon that is a Movie Star (Pikachu, Lucario, Zoroark, Landorus, Garchomp, Incineroar) does double damage, ignores immunities, and grants this Pokemon 1 stage of Attack, Special Attack, and Speed."
+  },
+  {
+    "id": 15,
+    "name": "Shadow Pressue",
+    "details": "Opposing pokemon lose twice as much PP when using a move. Flying and Psycihc type moves deal 50% more damage."
+  },
+  {
+    "id": 16,
+    "name": "Shadow Guard",
+    "details": "Damage dealt while at full health is halved. Flying and Psycihc type moves deal 50% more damage."
+  },
+  {
+    "id": 17,
+    "name": "Brittle Crystal",
+    "details": "Upon taking damage, lose one stage of Defense and gain two stages of Speed. Additionally, deal 1/8th max hp damage to attacker."
+  },
+  {
+    "id": 18,
+    "name": "Shadow Boost",
+    "details": "Super effective moves deal 25% more damage. Psychic moves deal 50% more damage. These effects stack multiplicitavely with each other."
   }
 ]
