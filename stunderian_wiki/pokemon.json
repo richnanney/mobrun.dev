@@ -56634,7 +56634,7 @@
     ]
   },
   {
-    "id": 150.3,
+    "id": 150.1,
     "name": "Shadow Mewtwo",
     "type1": "psychic",
     "type2": "dark",
@@ -59727,40 +59727,7 @@
     ]
   },
   {
-    "id": 150.1,
-    "name": "Mega Armored Mewtwo X",
-    "type1": "psychic",
-    "type2": "fighting",
-    "origin": "lostlore",
-    "image": "../images/placeholder.png",
-    "hp": 106,
-    "atk": 190,
-    "def": 100,
-    "spa": 154,
-    "spd": 100,
-    "spe": 130,
-    "abilities": [
-      "Steadfast"
-    ]
-  },
-  {
     "id": 150.2,
-    "name": "Mega Armored Mewtwo Y",
-    "type1": "psychic",
-    "origin": "lostlore",
-    "image": "../images/placeholder.png",
-    "hp": 106,
-    "atk": 150,
-    "def": 70,
-    "spa": 194,
-    "spd": 120,
-    "spe": 140,
-    "abilities": [
-      "Insomnia"
-    ]
-  },
-  {
-    "id": 150.4,
     "name": "Mega Shadow Mewtwo X",
     "type1": "dark",
     "type2": "fighting",
@@ -59777,7 +59744,7 @@
     ]
   },
   {
-    "id": 150.5,
+    "id": 150.3,
     "name": "Mega Shadow Mewtwo Y",
     "type1": "psychic",
     "type2": "dark",
