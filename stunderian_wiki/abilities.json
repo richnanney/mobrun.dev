@@ -52,7 +52,7 @@
   {
     "id": 11,
     "name": "Hall of Mirrors",
-    "details": "Flash cannon now is guarenteed to lower enemy Special Defense."
+    "details": "Using Flash Cannon lowers the target's Special Defense. Does not overwrite Flash Cannon's base effect."
   },
   {
     "id": 12,
