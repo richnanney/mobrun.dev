@@ -373,7 +373,6 @@ body {
 .learnset-table td { padding: 4px 6px; border-bottom: 1px solid #2a2d35; }
 .learnset-table tr:hover td { background: var(--surface2); }
 
-/* ─── Empty state ─── */
 .no-results {
   padding: 60px 20px;
   text-align: center;
