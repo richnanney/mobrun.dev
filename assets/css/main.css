@@ -746,12 +746,15 @@ input, select, textarea {
 			display: inline-block;
 			padding: 0.5em 1.25em;
 			transition: background-color 0.25s ease-in-out;
-			align-self: center;
 		}
 
 			#content .button:hover {
 				background: #348cb2;
 			}
+
+		#content .actions {
+			text-align: center;
+		}
 
 		/* Posts */
 
