@@ -651,6 +651,7 @@ input, select, textarea {
 					letter-spacing: 0;
 					line-height: 1.25em;
 					margin: 0.75em -1em 0 -1em;
+					transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, margin 0.2s ease-in-out;
 					white-space: nowrap;
 				}
 
